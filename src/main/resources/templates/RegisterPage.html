@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head xmlns: th= "https://www.thymeleaf.org/">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>Register page</h3>
+	<form action="save" method="post" >
+	
+	Name : <input type="text" name="name"/> <br/>
+	Email : <input type="text" name="email"/> <br/>
+	Password : <input type="text" name="pwd"/> <br/>
+	Roles : 
+		<input type="checkbox" name="roles" value="ADMIN"/>ADMIN
+		<input type="checkbox" name="roles" value="EMPLOYEE"/>EMPLOYEE <br/>
+	
+	<input type="submit" value="Sign in"/> 
+	
+	</form>
+	<div th:text="${message}">
+		
+	</div> 
+</body>
+</html>
